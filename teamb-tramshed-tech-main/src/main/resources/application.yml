@@ -1,0 +1,58 @@
+server:
+  port: 8080  # 设置服务器端口为8080
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 428535534283-h2vq6lbest6ehqst3e4cfp3mu7armkvm.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
+            redirect-uri: "{baseUrl}/login/oauth2/code/google"  # 定义回调URI
+        provider:
+          google:
+            authorization-uri: https://accounts.google.com/o/oauth2/auth
+            token-uri: https://oauth2.googleapis.com/token
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+            user-name-attribute: sub
+
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/Tramshed-tech
+    username: root
+    password: comsc
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none  # 不自动生成数据库表结构
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+        security.oauth2.client: DEBUG
+    root: INFO
+
+notion:
+  api:
+    url: https://api.notion.com
+    token: secret_7LojNLHSdhgOVdfHKkwTY1DsCItWj0Djpfb1SVF34dm
+    version: 2022-06-28
+    event-database-id: 3eca39fe5ed34543b5a287c1f17ca1a3
+    venue-database-id: ef67e4c9758a40c6954ec86ee5206e29
+    client-database-id: bf2e9ba8bae442a29003fd758b3dddd9
+    admin-database-id: 2b02b2d4ca164c6dab3d0caa2dd1d3f6
+
+
+
+

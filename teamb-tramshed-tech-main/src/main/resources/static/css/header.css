@@ -1,0 +1,80 @@
+.header {
+    background-color: #333;  /* Dark background for the footer */
+    color: white;            /* White text color */
+    padding: 5px 0;         /* Padding around the footer */
+    display: flex;
+    justify-content: space-between; /* Ensure header content is spaced out */
+    align-items: center;     /* Vertically center the header content */
+}
+
+#space{
+    background-color: #333;  /* Dark background for the footer */
+    color: white;            /* White text color */
+    padding: 10px 0;         /* Padding around the footer */
+    display: flex;
+    justify-content: space-between; /* Ensure header content is spaced out */
+    align-items: center;     /* Vertically center the header content */
+    position: fixed;         /* Fixed position */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header a {
+    color: white;            /* Ensures links are also white */
+    margin: 0 15px;          /* Spacing between links */
+    text-decoration: none;  /* Removes underline from links */
+}
+
+.header a:hover {
+    text-decoration: underline; /* Adds underline on hover for better user interaction */
+}
+
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    height: 50px; /* 调整为合适的尺寸 */
+    margin-right: 20px;
+}
+
+.btn-link {
+    color: #007BFF; /* 蓝色 */
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.btn-icon img {
+    height: 24px;
+}
+
+.btn-outline-primary {
+    margin-right: 10px;
+}
+
+.btn-icon:hover {
+    background-color: #f8f9fa; /* 浅灰色背景 */
+}
+
+/* 调整对齐和间距 */
+.text-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

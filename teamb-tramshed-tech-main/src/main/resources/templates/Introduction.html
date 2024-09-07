@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="/css/Introduction.css" th:href="@{/css/Introduction.css}">
+    <div th:replace="fragments/header :: header"></div>
+</head>
+<body>
+<header>
+    <div class="auth-buttons">
+        <button onclick="location.href='/Login'">Sign in</button>
+        <button onclick="location.href='/Registration'">Sign up</button>
+    </div>
+</header>
+<main>
+    <section class="welcome-section">
+        <h1>Welcome to our page!</h1>
+        <p>Our aim is to make the operation simple!</p>
+    </section>
+    <section class="image-section">
+        <img src="/images/grangetown-min.jpg" alt="Welcome Image">
+    </section>
+
+    <div th:replace="fragments/footer :: footer"></div>
+</main>
+</body>
+</html>

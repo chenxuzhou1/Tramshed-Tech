@@ -1,0 +1,30 @@
+<!-- Header HTML -->
+<header th:fragment="header" class="header">
+    <link rel="stylesheet" href="/css/header.css" th:href="@{/css/header.css}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8 text-left">
+                <img src="/images/logo.png" th:src="@{/images/logo.png}" alt="logo" class="logo">
+                <a href="/Introduction" class="btn btn-link">Home</a>
+                <a href="/EventSpace" class="btn btn-link">Personal Information</a>
+                <a href="/eventForm" class="btn btn-link">Create Activities</a>
+                <a href="/admin" class="btn btn-link">Manager</a>
+            </div>
+            <div class="col-md-4 text-right">
+                <a href="#" class="btn btn-outline-primary">Search</a>
+                <button class="btn btn-icon">
+                    <img src="/images/email.png" th:src="@{/images/email.png}" alt="email icon">
+                </button>
+                <button class="btn btn-icon">
+                    <img src="/images/back.png" th:src="@{/images/back.png}" alt="back icon">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</header>
